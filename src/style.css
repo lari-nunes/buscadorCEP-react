@@ -1,0 +1,143 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgb(100, 138, 207), rgb(37, 95, 182), rgb(72, 84, 155));
+}
+
+.title{
+    font-size: 85px;
+    color: #fff;
+    animation: flipTitle 2s;
+}
+
+@keyframes flipTitle {
+    from {
+        transform: rotateX(90deg);
+    }
+    to {
+        transform: rotateX(0deg);
+    }
+}
+
+.containerInput{
+    background-color: #2f7fb4e3;
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px #fff;
+}
+
+.containerInput input{
+    background-color: transparent;
+    border: 0;
+    font-size: 18px;
+    color: #fff;
+    outline: none;
+    margin-right: 8px;
+}
+
+.containerInput input::placeholder{
+    color: #fff;
+    font-size: 17px;
+}
+
+.buttonSearch {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5;
+}
+
+.buttonSearch:hover{
+    transform: scale(1.2);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 500px;
+    border-radius: 8px;    
+}
+
+.main h2 {
+    margin: 26px 0;
+    font-size: 30px;
+}
+
+.main span {
+    margin-bottom: 16px;
+    font-weight: bold;        
+}
+
+@media (max-width: 800px){
+    .title{
+        font-size: 60px;
+    }
+    .main h2{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 540px){
+    .title{
+        font-size: 50px;
+    }
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+        width: 400px;
+        border-radius: 8px;
+    }
+    .main h2{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 520px){
+    .title{
+        font-size: 50px;
+    }
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+        width: 380px;
+        border-radius: 8px;
+    }
+    .main h2{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 440px){
+    .title{
+        font-size: 40px;
+    }
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+        width: 350px;
+        border-radius: 8px;
+    }
+    .main h2{
+        font-size: 25px;
+    }
+}
